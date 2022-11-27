@@ -59,25 +59,28 @@ img {
 ul { margin: 0 0; }
 h1,h2,h3,h4,h5,h6,p { margin: 0 0; }
 /* -------------------Header------------------ */
-.mail.icon,
-.tel.icon {
+.contact-list a {
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
-    fill: var(--second-text-color);
+  
 }
 
-
-
+.mail.icon,
+.tel.icon {
+    
+    margin-right: 10px;
+    
+}
 
  .header {
     padding-top: 0;
     padding-bottom: 0;
     
     border: 1px solid #ECECEC;
-     border-top: none;
-     border-left: none;
-     border-right: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 
  }
 .header .conteiner {
@@ -135,6 +138,7 @@ line-height: 1.14;
 letter-spacing: 0.02em;
     
 color: var(--main-text-color);
+fill: var(--second-text-color);
 }
 .contact-list.item {
 color: var(--second-text-color);}
@@ -145,7 +149,8 @@ color: var(--second-text-color);}
 .contact-list.item:focus,
 .nav-list.item.current
 { 
-color: var(--accent-color)
+color: var(--accent-color);
+fill: var(--accent-color);
 }
 
 /* -------------------Hero------------------ */
@@ -155,7 +160,12 @@ color: var(--accent-color)
     padding-bottom: 200px;
 
 
-    background: var(--second-background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-background.jpg);
+    background-size: 1600px;
+    background-color: #C4C4C4;
+    background-repeat: no-repeat;
+    background-position: center;
 
    }
    .hero>.conteiner {
@@ -246,8 +256,6 @@ color: var(--accent-color)
 }
 .benefits-list .icon {
 
-    width: 270px;
-    height: 120px;
     padding: 25px 100px;
     margin-bottom: 30px;
     background-color: var(--btn-background-color);
@@ -487,16 +495,21 @@ footer .conteiner {
 .social-footer {
     margin-left: 70px;
 }
-
+.contacts-footer {
+    width: 231px;
+}
 .contacts-footer,
 .social-footer
  {
   display: inline-block;
 }
  .social-list-footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
     width: 44px;
     height: 44px;
-    padding: 12px 12px;
+    
     border-radius: 50%;
  }
 
@@ -617,7 +630,13 @@ color: var(--address-text-color);
     display: block;
    
 }
-
+.portfolio-list .item:hover,
+ .portfolio-list .item:focus {
+border: 1px solid #EEEEEE;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+ 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .btn-list {
     display: flex;
