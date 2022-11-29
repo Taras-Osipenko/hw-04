@@ -12,6 +12,7 @@
     --address-text-color: rgba(255, 255, 255, 0.6);
     --btn-background-color: #F5F4FA;
     --bg-portfolio-list-item: #EEEEEE;
+    --main-icon-color: #AFB1B8;
 }
 
 body {
@@ -160,10 +161,14 @@ fill: var(--accent-color);
     padding-top: 200px;
     padding-bottom: 200px;
 
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-background.jpg);
-    background-size: 1600px;
+    background-size: cover;
     background-color: #C4C4C4;
     background-repeat: no-repeat;
     background-position: center;
@@ -350,7 +355,7 @@ margin-left: 30px;
     align-items: center;
     width: 44px;
     height: 44px;
-    fill: #AFB1B8;
+    fill: var(--main-icon-color);
     border-radius: 50%;
 
 }
@@ -462,20 +467,18 @@ section.clients {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    padding: auto auto;
+    
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--main-icon-color);
     border-radius: 4px;
-    fill: #AFB1B8
+    fill: var(--main-icon-color)
 }
 .clients-list .item + .item {
     margin-left: 30px;
 }
 
-/* .clients-list svg {
-    fill:#AFB1B8
-} */
+
 .clients-list a:hover,
 .clients-list a:focus {
 fill: var(--accent-color);
@@ -506,44 +509,29 @@ footer .conteiner {
 .contacts-footer {
     width: 231px;
 }
-.contacts-footer,
-.social-footer
- {
-  display: inline-block;
-}
+
  .social-list-footer a {
     display: flex;
     justify-content: center;
     align-items: center ;
     width: 44px;
     height: 44px;
-    
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    fill: var(--main-background-color);
+    
+   
  }
-
 
  .social-list-footer {
     display: flex;
-    flex-wrap: wrap;
+    
  }
     
 .social-list-footer .item + .item {
     margin-left: 10px;
 }
 
-.social-list-footer .item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    
-}
-.social-list-footer svg {
-fill: var(--main-background-color);
-}
 .social-list-footer a:hover,
 .social-list-footer a:focus {
 
@@ -555,7 +543,7 @@ background-color: var(--accent-color)
     margin-bottom: 20px;  
 
 
-    font-size: 14px;
+    font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -638,9 +626,15 @@ color: var(--address-text-color);
     display: block;
    
 }
-.portfolio-list .item:hover,
- .portfolio-list .item:focus {
-border: 1px solid #EEEEEE;
+
+ .portfolio-list-link {
+  text-decoration: none;
+   display: block;
+ }
+
+.portfolio-list-link:hover,
+.portfolio-list-link:focus {
+
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
  0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
