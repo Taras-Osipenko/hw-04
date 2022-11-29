@@ -93,6 +93,7 @@ align-items: center;
 display: flex;
 margin-top: 0;
 margin-bottom: 0;
+align-items: center;
 }
 
 .contact-list {
@@ -235,6 +236,15 @@ fill: var(--accent-color);
     overflow: hidden;
     }
 /* ----------------------------------- */
+.benefits-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px ;
+    margin-bottom: 30px;
+    background-color: var(--btn-background-color);
+    border-radius: 4px;
+}
 
 .benefits {
     padding-top: 94px;
@@ -256,10 +266,8 @@ fill: var(--accent-color);
 }
 .benefits-list .icon {
 
-    padding: 25px 100px;
-    margin-bottom: 30px;
-    background-color: var(--btn-background-color);
-    border-radius: 4px;
+   
+   
 
 }
 
